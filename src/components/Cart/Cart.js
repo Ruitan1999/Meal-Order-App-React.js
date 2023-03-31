@@ -1,10 +1,10 @@
 import { useContext, useState } from 'react';
 
-import Checkout from './Checkout';
 import Modal from '../UI/Modal';
 import CartItem from './CartItem';
 import classes from './Cart.module.css';
 import CartContext from '../../store/cart-context';
+import Checkout from './Checkout';
 
 const Cart = (props) => {
   const [isCheckout, setIsCheckout] = useState(false);
@@ -67,4 +67,3 @@ const Cart = (props) => {
 };
 
 export default Cart;
-
